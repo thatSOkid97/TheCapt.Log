@@ -1,0 +1,147 @@
+/* 16px = 1em */
+
+/***************
+GENERAL
+****************/
+
+body {
+  text-align: center;
+  font-family: monospace, arial, sans-serif;
+  line-height: 1.4em;
+}
+
+
+.container {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+
+
+/***************
+HEADER
+****************/
+
+#header h1 {
+  width: 100%;
+  padding: 1em 0;
+  margin-top: 0;
+  position: relative;
+}
+
+h1 {
+  color: grey;
+  background-color: skyblue;
+}
+
+h3 {
+  color: grey;
+  text-decoration: underline;
+}
+
+
+
+/***************
+HOME
+****************/
+
+#primary-content , p {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+
+ img {
+    width: 50%;
+    margin-top: 0.75em;
+}
+
+
+
+/***************
+GALLERY
+****************/
+
+
+
+
+
+
+
+/***************
+NAVAGATION
+****************/
+
+.main-nav li {
+  display: inline-block;
+  padding: 0.75em;
+}
+
+/* commented out as i am trying to figure out how to make this work
+.selected {
+  font-weight: bolder;
+  color: red;
+}
+*/
+
+
+/***************
+LINKS
+****************/
+
+
+
+a:link {
+  text-decoration: none;
+  color: skyblue;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+a:focus {
+  color: white;
+  background-color: black;
+}
+
+
+/***************
+FOOTER
+****************/
+#footer p {
+  width: 100%;
+  padding: 0.5em 0;
+  margin-bottom: -4px;
+  background-color: grey;
+  color: skyblue;
+}
+
+
+
+
+/***************
+MEDIA QUERIES
+****************/
+
+@media (min-width: 769px) {
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+    .wrap {
+      min-height: cal(100vh - 89px);
+    }
+
+}
